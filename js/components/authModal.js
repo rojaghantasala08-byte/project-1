@@ -39,7 +39,7 @@ export function renderAuthModal(currentMode = "login") {
 
           <div class="form-group" style="margin-bottom:1rem;">
             <label class="form-label">Email Address</label>
-            <input type="email" id="auth-email" class="form-input" placeholder="name@example.com" required value="student@careercompass.ai">
+            <input type="email" id="auth-email" class="form-input" placeholder="name@example.com" required value="student@jobhunt.ai">
           </div>
 
           ${currentMode !== "forgot" ? `
