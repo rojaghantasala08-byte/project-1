@@ -1,0 +1,17 @@
+{
+  "name": "job-hunt",
+  "version": "1.0.0",
+  "description": "Job Hunt - Complete AI Career Guidance & Visual Roadmap Platform",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 5173",
+    "start": "vite --host --port 5173",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

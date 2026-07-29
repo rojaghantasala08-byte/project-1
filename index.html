@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Hunt - Complete AI Career Guidance & Visual Roadmap Platform</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Discover 100+ popular and hidden careers, interactive visual roadmaps, AI career recommendations, scholarships, competitive exams, resume builder, and ATS scanner.">
+  <meta name="keywords" content="Career Guidance, AI Career Recommendation, Career Roadmap, SSC UPSC Exams, After BTech Jobs, Government Jobs, Private Jobs, Resume Builder, ATS Scanner">
+  <meta name="author" content="Job Hunt">
+
+  <!-- Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/roadmap.css">
+  <link rel="stylesheet" href="css/tools.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <div class="brand-logo" data-nav="home">
+        <div class="brand-icon">
+          <i data-lucide="compass"></i>
+        </div>
+        <span>Job <span class="gradient-text">Hunt</span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link active" data-nav="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-nav="explorer">Career Explorer</a></li>
+        <li><a href="#" class="nav-link" data-nav="wizard">AI Assistant</a></li>
+        <li><a href="#" class="nav-link" data-nav="tools">Career Tools</a></li>
+        <li><a href="#" class="nav-link" data-nav="scholarships">Scholarships</a></li>
+        <li><a href="#" class="nav-link" data-nav="exams">Exams Guide</a></li>
+        <li><a href="#" class="nav-link" data-nav="admin">Admin Panel</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Dark Mode Toggle Button -->
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Theme">
+          <i id="theme-icon" data-lucide="moon"></i>
+        </button>
+
+        <!-- Auth Button -->
+        <button id="nav-auth-btn" class="btn btn-primary btn-sm">
+          Sign In
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Daily Career Tip Banner Ticker -->
+  <div style="background: var(--gradient-hero); border-bottom: 1px solid var(--border-color); padding: 0.5rem 0; font-size: 0.85rem;">
+    <div class="container flex justify-between items-center">
+      <div class="flex items-center gap-2" id="daily-tip-text">
+        <span>💡 Loading daily career tip...</span>
+      </div>
+      <span class="badge badge-purple" style="font-size: 0.7rem;">Live Daily Tip</span>
+    </div>
+  </div>
+
+  <!-- MAIN APP CONTAINER -->
+  <main class="container section-padding">
+
+    <!-- ==================== 1. HOME SECTION ==================== -->
+    <section id="section-home">
+      
+      <!-- Hero Section -->
+      <div class="glass-card animate-fade-in" style="padding: 3.5rem 2.5rem; text-align: center; margin-bottom: 3.5rem; position: relative; overflow: hidden;">
+        <span class="badge badge-purple" style="margin-bottom: 1rem;">Next-Gen Career Guidance Platform</span>
+        
+        <h1 style="max-width: 850px; margin: 0 auto 1.25rem;">
+          Navigate Your Future with <span class="gradient-text">AI Precision & Visual Roadmaps</span>
+        </h1>
+        
+        <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 2.25rem;">
+          Discover hundreds of popular & hidden careers, step-by-step visual learning roadmaps, AI match recommendations, scholarships, competitive exam guides, and real-time resume ATS audits.
+        </p>
+
+        <!-- Global Multi-Search Bar -->
+        <div class="search-box" style="margin: 0 auto 2.5rem;">
+          <div class="search-input-wrapper">
+            <i data-lucide="search" style="color: var(--text-muted); font-size: 1.2rem;"></i>
+            <input type="text" id="global-search-input" class="search-input" placeholder="Search Jobs (e.g. AI Engineer, IAS Officer), Exams, Skills, Scholarships...">
+            <button class="btn btn-primary btn-sm" style="border-radius: var(--radius-full);">Search</button>
+          </div>
+          <div id="global-search-dropdown" class="search-results-dropdown"></div>
+        </div>
+
+        <!-- Quick CTAs -->
+        <div class="flex justify-center items-center gap-4">
+          <button class="btn btn-primary btn-lg" data-nav="wizard">
+            <i data-lucide="sparkles"></i> Launch AI Career Assistant
+          </button>
+          <button class="btn btn-secondary btn-lg" data-nav="explorer">
+            Explore All 100+ Careers &rarr;
+          </button>
+        </div>
+
+        <!-- Key Metrics Counter -->
+        <div class="grid grid-cols-4 gap-4" style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+          <div>
+            <h3 style="font-size: 2rem; color: var(--accent-blue);">100+</h3>
+            <p style="font-size: 0.875rem;">Detailed Career Paths</p>
+          </div>
+          <div>
+            <h3 style="font-size: 2rem; color: var(--accent-purple);">500+</h3>
+            <p style="font-size: 0.875rem;">Visual Roadmap Steps</p>
+          </div>
+          <div>
+            <h3 style="font-size: 2rem; color: var(--accent-emerald);">₹50Cr+</h3>
+            <p style="font-size: 0.875rem;">Scholarship Directory</p>
+          </div>
+          <div>
+            <h3 style="font-size: 2rem; color: var(--accent-amber);">98%</h3>
+            <p style="font-size: 0.875rem;">AI Match Precision</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Assistant Banner Teaser -->
+      <div class="glass-card flex flex-col md:flex-row justify-between items-center gap-6" style="padding: 2.5rem; margin-bottom: 3.5rem; background: var(--gradient-hero); border-color: var(--accent-sky);">
+        <div style="max-width: 600px;">
+          <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">AI Powered</span>
+          <h3>Confused About Your After-12th or Graduation Career?</h3>
+          <p style="margin-top: 0.5rem; color: var(--text-secondary);">Our smart AI evaluation engine asks your education stream, skills, budget, and location preferences to calculate your 0–100% career match score!</p>
+        </div>
+        <button class="btn btn-primary btn-lg" data-nav="wizard" style="white-space: nowrap;">
+          Take 2-Min AI Quiz &rarr;
+        </button>
+      </div>
+
+      <!-- Category Explorer Grid -->
+      <div style="margin-bottom: 3.5rem;">
+        <div class="section-header text-center" style="margin-bottom: 2rem;">
+          <h2>Explore Careers by <span class="gradient-text">Education Level</span></h2>
+          <p>Select your current status to view tailored career options and high-pay roadmaps.</p>
+        </div>
+
+        <div class="grid grid-cols-4 gap-4">
+          <div class="cat-card" data-nav="explorer">
+            <div class="cat-icon"><i data-lucide="graduation-cap"></i></div>
+            <h4>After 10th & ITI</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Railway ALP, Diploma, ITI Trades, Vocational</p>
+          </div>
+          <div class="cat-card" data-nav="explorer">
+            <div class="cat-icon"><i data-lucide="book-open"></i></div>
+            <h4>After 12th / Inter</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">MPC, BiPC, MEC, CEC, Commercial Pilot, NDA</p>
+          </div>
+          <div class="cat-card" data-nav="explorer">
+            <div class="cat-icon"><i data-lucide="cpu"></i></div>
+            <h4>After BTech & Diploma</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">AI/ML, ISRO Scientist, Junior Engineer, Cloud</p>
+          </div>
+          <div class="cat-card" data-nav="explorer">
+            <div class="cat-icon"><i data-lucide="award"></i></div>
+            <h4>After Degree (BSc/BCom/BA)</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">IAS Officer, SBI PO, Cyber Forensics, Actuary</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Careers Grid -->
+      <div style="margin-bottom: 3.5rem;">
+        <div class="flex justify-between items-center" style="margin-bottom: 2rem;">
+          <div>
+            <h2>Featured & <span class="gradient-text">High-Pay Careers</span></h2>
+            <p>Handpicked career options with top industry demand and growth.</p>
+          </div>
+          <button class="btn btn-secondary btn-sm" data-nav="explorer">View All Careers &rarr;</button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6" id="home-featured-grid">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+
+      <!-- News & Job Notifications Grid -->
+      <div>
+        <div class="section-header text-center" style="margin-bottom: 2rem;">
+          <h2>Latest Notifications & <span class="gradient-text">Career News</span></h2>
+          <p>Stay updated with official exam dates, government job circulars, and market trends.</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6" id="home-news-grid">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== 2. CAREER EXPLORER SECTION ==================== -->
+    <section id="section-explorer" style="display: none;">
+      <div id="career-explorer-root"></div>
+    </section>
+
+    <!-- ==================== 3. AI RECOMMENDATION WIZARD SECTION ==================== -->
+    <section id="section-wizard" style="display: none;">
+      <div id="ai-wizard-root"></div>
+    </section>
+
+    <!-- ==================== 4. CAREER TOOLS SUITE SECTION ==================== -->
+    <section id="section-tools" style="display: none;">
+      <div class="section-header text-center" style="margin-bottom: 2.5rem;">
+        <span class="badge badge-purple">Career Toolkit</span>
+        <h2>Suite of Professional <span class="gradient-text">Career Tools</span></h2>
+        <p>Resume builder, AI ATS scanner, mock interview simulator, and personality assessment tools.</p>
+      </div>
+
+      <div class="flex flex-col gap-12">
+        <div id="resume-builder-root"></div>
+        <div id="ats-checker-root"></div>
+        <div id="mock-interview-root"></div>
+        <div id="quiz-root"></div>
+        <div id="predictors-root"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. SCHOLARSHIPS SECTION ==================== -->
+    <section id="section-scholarships" style="display: none;">
+      <div id="scholarship-root"></div>
+    </section>
+
+    <!-- ==================== 6. EXAMS GUIDE SECTION ==================== -->
+    <section id="section-exams" style="display: none;">
+      <div id="exam-root"></div>
+    </section>
+
+    <!-- ==================== 7. ADMIN PANEL SECTION ==================== -->
+    <section id="section-admin" style="display: none;">
+      <div id="admin-root"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-icon"><i data-lucide="compass"></i></div>
+            <span>Job <span class="gradient-text">Hunt</span></span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem; max-width: 320px;">
+            Empowering students and professionals to make informed career decisions using artificial intelligence, structured visual roadmaps, and authentic scholarship data.
+          </p>
+          <div class="flex gap-2">
+            <span class="badge badge-blue">Firebase Auth</span>
+            <span class="badge badge-emerald">Firestore Ready</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Career Paths</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" data-nav="explorer">After 10th & ITI</a></li>
+            <li><a href="#" class="footer-link" data-nav="explorer">After 12th Intermediate</a></li>
+            <li><a href="#" class="footer-link" data-nav="explorer">After BTech & Diploma</a></li>
+            <li><a href="#" class="footer-link" data-nav="explorer">Research & Study Abroad</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Platform Tools</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" data-nav="wizard">AI Match Engine</a></li>
+            <li><a href="#" class="footer-link" data-nav="tools">ATS Resume Checker</a></li>
+            <li><a href="#" class="footer-link" data-nav="tools">Mock Interview AI</a></li>
+            <li><a href="#" class="footer-link" data-nav="scholarships">Scholarship Hub</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Support & Admin</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" data-nav="admin">Admin Dashboard</a></li>
+            <li><a href="#" class="footer-link" data-nav="exams">Competitive Exam Calendar</a></li>
+            <li><a href="#" class="footer-link" onclick="alert('Job Hunt v2.0 Production Ready.')">About Platform</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Job Hunt. All rights reserved. Production Ready.</p>
+        <div class="flex gap-4">
+          <a href="#" style="color:var(--text-muted); font-size:0.85rem;">Privacy Policy</a>
+          <a href="#" style="color:var(--text-muted); font-size:0.85rem;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Main Bundle -->
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
